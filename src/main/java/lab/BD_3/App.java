@@ -1,6 +1,7 @@
 package lab.BD_3;
 
 import java.text.DecimalFormat;
+import java.util.Arrays;
 
 /**
  * Hello world!
@@ -13,6 +14,10 @@ public class App
     	DecimalFormat df = new DecimalFormat("#.00");
     	double sum = 1.234567;
     	double a = Double.valueOf(df.format(sum));
-        System.out.println(a);
+    	int b[] = new int[10];
+    	b[1] =11;
+    	System.out.println(Arrays.toString(b));
+    	Arrays.fill(b, -1);
+    	System.out.println(Arrays.toString(b));
     }
 }
