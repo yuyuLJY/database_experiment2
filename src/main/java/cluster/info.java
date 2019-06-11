@@ -5,10 +5,11 @@ import java.util.ArrayList;
 public class info {
 	static ArrayList<String> clusterList = new ArrayList<String>();
 	static int clusterNumber = 3;
-	static int count;
-	public info(ArrayList<String> clusterList,int count) {
+	static int countOutput = 0;//输出10000个结果
+	static int changeNum= 0;
+	static boolean isStop = false;
+	public info(ArrayList<String> clusterList) {
 		this.clusterList = clusterList;
-		this.count = count;
 	}
 	
 	public static int getListLength() {
@@ -20,8 +21,12 @@ public class info {
 		clusterList.add(s);
 	}
 	
-	public static int getCount() {
-		return count;
+	public static void setCount(int a) {
+		countOutput = a;
+	}
+	
+	public static void setChangeCount(int a) {
+		changeNum = a;
 	}
 
 }
